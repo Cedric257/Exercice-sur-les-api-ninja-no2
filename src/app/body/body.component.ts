@@ -1,12 +1,10 @@
-import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { IntercepteurApiService } from '../intercepteur-api.service';
 import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-body',
   standalone: true,
-  imports: [CommonModule,RouterLink],
+  imports: [RouterLink],
   templateUrl: './body.component.html',
   styleUrl: './body.component.scss'
 })

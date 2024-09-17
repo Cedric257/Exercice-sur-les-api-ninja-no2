@@ -1,23 +1,21 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { environment } from '../environment/environment';
+import { HttpClient, HttpHandler, HttpHeaders, HttpRequest } from '@angular/common/http';
 import { map, Observable } from 'rxjs';
+import { apiIntercepteurInterceptor } from './intercepteur-api.interceptor';
 
 @Injectable({
   providedIn: 'root'
 })
 export class IntercepteurApiService  {
-private link_api = 'https://api.api-ninjas.com/v1/celebrity?name=Michael Jordan';
-private cle_api = environment.api_Key;
-
+private apiUrl= 'https://api.api-ninjas.com/v1/celebrity?name=Michael Jordan';
+private apiKey='Km6zrgw2XCmVWFR5ytLgIQ==87WF8LvvFSwgNfIB'
 constructor (private http : HttpClient){}
 
 getData(): Observable<any> {
-  const headers = new HttpHeaders({
-    'x-api-key': this.cle_api, 
+  const headers=new HttpHeaders({
+    'X-api-key':this.apiKey
   });
-
-  return this.http.get<any>(this.link_api, { headers });
+  return this.http.get(this.apiUrl, {headers});
 }
 
 }

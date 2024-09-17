@@ -1,9 +1,10 @@
 <div class="container mt-5 px-5">
-  <div class="container-fluid text-center mt-5" *ngIf="Loading">
-    <span class="fs-4 fw-semibold">loading...</span>
+  <div class="container-fluid text-center mt-5">
+   @if (Loading) { <span class="fs-4 fw-semibold">loading...</span>}
   </div>
+  @for (item of data; track data) {
 
-  <div class="row bg-light p-2 mx-5 rounded mb-3 w-50 " *ngFor='let item of data'>
+  <div class="row bg-light p-2 mx-5 rounded mb-3 w-50 ">
       
      
           <div class="col-11 d-flex justify-content-between align-items-start">
@@ -20,5 +21,8 @@
             <div class="row bg-primary rounded-3 px-3 mx-2">
             <p class=" mt-2"><small>L'occupation de chaque jours: <br>{{item.occupation}} </small></p>
    <div class="col-4 me-auto">{{item.gender}}</div> <div class="col-4 me-auto">Alive: {{item.is_alive}}</div>
+            </div>
+  </div>
+  }
       
   </div>

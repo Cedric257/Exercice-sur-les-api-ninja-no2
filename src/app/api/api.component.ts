@@ -1,34 +1,32 @@
 import { Component, OnInit } from '@angular/core';
 import { IntercepteurApiService } from '../intercepteur-api.service';
-import { CommonModule } from '@angular/common';
+import { response } from 'express';
+import { error } from 'console';
 
 @Component({
   selector: 'app-api',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './api.component.html',
   styleUrl: './api.component.css'
 })
 export class ApiComponent implements OnInit {
 
 
-  public data: Array<any> = [];
-  name : string = 'michael jordan';
+  public data: any;
   Loading : boolean = true;
   
   constructor(private intercepteur_API : IntercepteurApiService){}
   
-  ngOnInit(){
-    this.getExercices()
-  }
-  
-  async getExercices (){
-  this.intercepteur_API.getData().subscribe({
-    next: response=>{
-      this.data = response;
-      console.log("data displayed",this.data);
+  ngOnInit():void {
+    this.intercepteur_API.getData().subscribe(
+      (response)=>{this.data = response;
+      console.log('Data display:',this.data);
       this.Loading = false;
-  }}
-  )}
+  },(error)=>{
+    console.error('Error of data',error)
+  }
+  );
+}
 
 }
