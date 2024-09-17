@@ -1,0 +1,170 @@
+<div class="container mt-5 px-5">
+    <div class="row bg-light p-2 mx-5 rounded mb-3 w-50 ">
+        <div class="col-1 d-flex d-flex-column align-items-center justify-content-between">
+            <div class="vote-controls rounded-3">
+              <button class="btn border-0" id="plus" (click)="increment()"><img src="/images/icon-plus.svg" alt=""></button>
+              <span class="mx-2 text-primary-emphasis">{{count1}}</span>
+              <button class="btn border-0" id="minus" (click)="decrement()"><img src="/images/icon-minus.svg" alt=""></button>
+            </div>
+        </div>
+        <div class="col-11">
+            <div class="col-11 d-flex justify-content-between align-items-start">
+                <div class="d-flex align-items-center mt-2">
+                  <img src="/images/avatars/image-amyrobson.png" alt="user" class="rounded-circle me-2" width="35" height="35">
+                  <div class="row d-flex px-2">
+                    <div class="col-6 mt-1"> <h6 class="m-0">amyrobson</h6></div>
+                    <div class="col-6 mt-0"> <small class="text-muted">1 month ago</small></div>
+                  </div>
+                </div>
+                <div class="mt-2">
+                  <a href="#" class="text-decoration-none text-primary-emphasis"><img class="mx-1" src="/images/icon-reply.svg" alt="">Reply</a>
+                </div>
+              </div>
+              <p class="mt-2"><small>Impressive! Though it seems the drag feature could be improved. 
+                But overall it looks incredible. 
+                You’ve nailed the design and the responsiveness at 
+                various breakpoints works really well. </small></p>
+    
+        </div>
+
+        </div>
+        <div class="row bg-light p-2 mx-5 rounded mb-3 w-50 ">
+            <div class="col-1 d-flex d-flex-column align-items-center justify-content-between">
+                <div class="vote-controls rounded-3">
+                  <button class="btn border-0" id="plus" (click)="increment1()"><img src="/images/icon-plus.svg" alt=""></button>
+                  <span class="mx-2 text-primary-emphasis">{{count2}}</span>
+                  <button class="btn border-0" id="minus" (click)="decrement1()"><img src="/images/icon-minus.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="col-11">
+                <div class="col-11 d-flex justify-content-between align-items-start">
+                    <div class="d-flex align-items-center mt-2">
+                      <img src="/images/avatars/image-maxblagun.png" alt="user" class="rounded-circle me-2" width="35" height="35">
+                      <div class="row d-flex px-2">
+                        <div class="col-6 mt-1"> <h6 class="m-0">maxblagun</h6></div>
+                        <div class="col-6 mt-0"> <small class="text-muted">2 weeks ago</small></div>
+                      </div>
+                    </div>
+                    <div class="mt-2">
+                      <a href="#" class="text-decoration-none text-primary-emphasis"><img class="mx-1" src="/images/icon-reply.svg" alt="">Reply</a>
+                    </div>
+                  </div>
+                  <p class="mt-2"><small>Woah, your project looks awesome! How long have you been coding for? I’m still new,
+                     but think I want to dive into React as well soon. 
+                     Perhaps you can give me an insight on where I can learn React? Thanks!
+                  </small></p>
+        
+            </div>
+    
+            </div>
+           <div class="row mx-5 rounded mb-3 w-50">
+                <div class="col-1">
+                <div class="ligne-verticale"></div>
+                </div>
+              <div class="col-11">
+                    <div class="row">
+                    <div class="col-12 bg-light rounded">
+                        <div class="row bg-light rounded w-100">
+                            <div class="col-1 d-flex d-flex-column align-items-center justify-content-between">
+                                <div class="vote-controls rounded-3">
+                                  <button class="btn border-0" id="plus" (click)="increment2()"><img src="/images/icon-plus.svg" alt=""></button>
+                                  <span class="mx-2 text-primary-emphasis">{{count3}}</span>
+                                  <button class="btn border-0" id="minus" (click)="decrement2()"><img src="/images/icon-minus.svg" alt=""></button>
+                                </div>
+                            </div>
+                            <div class="col-11">
+                                <div class="col-11 d-flex justify-content-between align-items-start">
+                                    <div class="d-flex align-items-center mt-2">
+                                      <img src="/images/avatars/image-ramsesmiron.png" alt="user" class="rounded-circle me-2" width="35" height="35">
+                                      <div class="row d-flex px-2">
+                                        <div class="col-6 mt-1"> <h6 class="m-0">ramsesmiron</h6></div>
+                                        <div class="col-6 mt-0"> <small class="text-muted">1 weeks ago</small></div>
+                                      </div>
+                                    </div>
+                                    <div class="mt-2">
+                                      <a href="#" class="text-decoration-none text-primary-emphasis"><img class="mx-1" src="/images/icon-reply.svg" alt="">Reply</a>
+                                    </div>
+                                  </div>
+                                  <p class="mt-2"><small>maxblagun If you're still new, I’d recommend focusing on the fundamentals of HTML, 
+                                    CSS, and JS before considering React. It’s very tempting to jump ahead but lay a solid foundation first.
+                     
+                                  </small></p>
+                            </div>
+                    </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                    <div class="col-12 bg-light rounded">
+                        <div class="col-12 bg-light rounded">
+                            <div class="row bg-light rounded w-100">
+                                <div class="col-1 d-flex d-flex-column align-items-center justify-content-between">
+                                    <div class="vote-controls rounded-3">
+                                      <button class="btn border-0" id="plus" (click)="increment3()"><img src="/images/icon-plus.svg" alt=""></button>
+                                      <span class="mx-2 text-primary-emphasis">{{count4}}</span>
+                                      <button class="btn border-0" id="minus" (click)="decrement3()"><img src="/images/icon-minus.svg" alt=""></button>
+                                    </div>
+                                </div>
+                                <div class="col-11">
+                                    <div class="col-11 d-flex justify-content-between align-items-start">
+                                        <div class="d-flex align-items-center mt-2">
+                                          <img src="/images/avatars/image-juliusomo.png" alt="user" class="rounded-circle me-2" width="35" height="35">
+                                          <div class="row">
+                                            <div class="col-4 mt-1"> <h6 class="">juliusomo</h6></div> 
+                                            <div class="col-2 mt-0 rounded mx-3"> 
+                                              <div class="row bg-primary rounded h-75">
+                                                <p class=" rounded px-2">you </p>
+                                              </div>
+                                            </div>
+                                            <div class="col-4 mt-0"> <small class="text-muted">2 day ago</small></div>
+                                           
+                                          </div>
+                                        </div>
+                                        <div class="mt-2">
+                                            <a href="#" (click)="onDelete()" class="text-decoration-none text-danger"><img class="mx-1" src="/images/icon-delete.svg" alt="">Delete</a>
+                                            
+
+                                            <a href="#" class="text-decoration-none text-primary-emphasis"><img class="mx-1" src="/images/icon-edit.svg" alt="">Edit</a>
+                                        </div>
+                                      </div>
+                                      <p class="mt-2"><small>ramsesmiron I couldn’t agree more with this. 
+                                        Everything moves so fast and it always seems like everyone knows the newest library/framework. 
+                                        But the fundamentals are what stay constant.
+
+                                      </small></p>
+                                </div>
+                            </div>
+                   
+                        </div>
+                   </div>
+                </div>
+              </div>
+           </div>
+
+        <div class="row bg-light p-2 mx-5 rounded mb-3 w-50 ">
+            <div class="col-1 d-flex d-flex-column align-items-center justify-content-between">  
+                <img src="/images/avatars/image-juliusomo.png" alt="user" class="rounded-circle me-3" width="40" height="40">
+
+            </div>
+            <div class="col-11"><div class="d-flex align-items-center"></div>
+                
+                  <textarea class="form-control" placeholder="Add a comment..."></textarea>
+                </div>
+              
+        
+           
+                
+                <div class="text-end mt-2">
+                  <button routerLink="/api"  class="btn btn-primary">Send</button>
+                 
+                </div>
+
+                
+            
+           </div>
+
+
+
+
+
+
+ 
